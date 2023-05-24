@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContadorPasso">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:cpb_progress_max="5000"
+        app:cpb_background_progressbar_color="#724B4B4E"
+        app:cpb_background_progressbar_width="5dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="#4ACF4F"
+        app:cpb_progressbar_width="10dp"
+        app:cpb_round_border="false" />
+
+    <TextView
+        android:id="@+id/tv_StepsTaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="0"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:textSize="60sp"
+        />
+    <TextView
+        android:textSize="30dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:id="@+id/totalMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_StepsTaken"
+        android:text="5000"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
